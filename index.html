@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horus Cloud - Egypt's Premier Supercomputing Infrastructure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 2h16v2H4V2zm0 18h16v2H4v-2zM2 6h20v2H2V6zm0 10h20v2H2v-2zm0-5h20v2H2v-2z"/>
+                    <rect x="6" y="9" width="4" height="4"/>
+                    <rect x="14" y="9" width="4" height="4"/>
+                </svg>
+                Horus Cloud
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#services">HPC Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#services">CPU Computing</a>
+                        <a href="#services">GPU Acceleration</a>
+                        <a href="#services">Data Storage</a>
+                        <a href="#services">AI/ML Services</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#services">Research Domains ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#services">Climate Science</a>
+                        <a href="#services">Genomics</a>
+                        <a href="#services">Physics</a>
+                        <a href="#services">Engineering</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#contact">Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#contact">Consulting</a>
+                        <a href="#contact">Training</a>
+                        <a href="#contact">Technical Support</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.php" style="background:rgba(37,99,235,0.15);color:#93c5fd;padding:8px 16px;border-radius:8px;font-weight:600;">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Egypt's Premier Supercomputing Infrastructure</h1>
+            <p>Access high-performance computing resources for advanced research in AI, scientific simulation, data analytics, and more.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Request Access</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-contact">
+                <div class="hero-contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                    </svg>
+                    <div>
+                        <span>Call us 24/7</span>
+                        <strong>+20 10 08945715</strong>
+                    </div>
+                </div>
+                <div class="hero-contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <div>
+                        <span>Email us</span>
+                        <strong>chep@fayoum.edu.eg</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner Image -->
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Availability</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">CPU Cores</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">GPU</div>
+                <div class="stat-label">Accelerated Computing</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">HPC</div>
+                <div class="stat-label">Infrastructure</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2 class="section-title">What is Horus Cloud?</h2>
+        <p class="section-subtitle">A complete High-Performance Computing Laboratory, not just regular servers</p>
+        
+        <div class="about-split">
+            <div class="about-text">
+                <div class="info-card">
+                    <div class="info-icon">⚡</div>
+                    <h3>Unified Processing</h3>
+                    <p>Multiple servers interconnected through high-speed networking and management software, operating as a single computational unit.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🧠</div>
+                    <h3>Parallel Computing</h3>
+                    <p>Thousands of CPU and GPU cores working simultaneously for complex operations.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌐</div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Enterprise-grade cloud computing platform for breakthrough discoveries.</p>
+                </div>
+            </div>
+            <div class="about-image-box">
+                <img src="images/datacenter-2.jpg" alt="Server Infrastructure Details">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="services">
+        <h2 class="section-title">Research Applications</h2>
+        <p class="section-subtitle">Powering breakthrough research across multiple scientific disciplines</p>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">🌍</div>
+                <h3>Climate Modeling</h3>
+                <p>Simulate global climate patterns and predict extreme weather events.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🧬</div>
+                <h3>Genomics & Biology</h3>
+                <p>Analyze complete genomes and advance personalized medicine.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>Train advanced neural networks at scale.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">💎</div>
+                <h3>Materials Science</h3>
+                <p>Discover novel materials and design nanostructures.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🏥</div>
+                <h3>Medical Research</h3>
+                <p>Model disease propagation and simulate drug interactions.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">✈️</div>
+                <h3>Engineering</h3>
+                <p>Simulate aerodynamics and optimize designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Horus Cloud?</h2>
+            <p class="section-subtitle">Leading the future of scientific computing in Egypt</p>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>State-of-the-Art Infrastructure</h3>
+                    <p>Latest hardware with cutting-edge GPUs and high-speed interconnects for maximum performance.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Support Team</h3>
+                    <p>Dedicated researchers and engineers available 24/7 to assist with computational challenges.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security with data encryption and 99.9% uptime guarantee for critical research.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Flexible pricing models designed for academic institutions with special educational discounts.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Instant Scalability</h3>
+                    <p>Scale your computing resources up or down based on project requirements in real-time.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Academic Focus</h3>
+                    <p>Built specifically for research institutions with tools tailored for scientific discovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA with Image -->
+    <section class="cta-section">
+        <div class="cta-flex">
+            <div class="cta-content">
+                <h2>Ready to Accelerate Your Research?</h2>
+                <p>Join researchers using Egypt's most powerful computing infrastructure</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-cta-primary">Request Access Now</a>
+                    <a href="tel:+201008945715" class="btn btn-cta-secondary">Call: +20 10 08945715</a>
+                </div>
+            </div>
+            <div class="cta-image-box">
+                <img src="images/datacenter-3.jpg" alt="Horus Cloud Infrastructure">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Request Access to Horus Cloud</h2>
+            <p class="section-subtitle">Configure your research requirements and submit your access request</p>
+            
+            <div class="request-layout">
+                <!-- Left Column - Configuration Form -->
+                <div class="config-form-panel">
+                    <div class="panel-header">
+                        <h3>Research Configuration</h3>
+                        <p>Fill in your details and requirements below</p>
+                    </div>
+                    
+                    <form id="researchForm" class="modern-form">
+
+                        <!-- STEP 1: Service Type -->
+                        <div class="form-section">
+                            <div class="form-section-label">
+                                <span class="step-badge">1</span>
+                                Service Type <span class="required">*</span>
+                            </div>
+                            <div class="service-toggle">
+                                <label class="service-option">
+                                    <input type="radio" name="service_type" value="hosting" required>
+                                    <div class="service-card">
+                                        <div class="service-icon">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="3" width="20" height="5" rx="1"/><rect x="2" y="10" width="20" height="5" rx="1"/><rect x="2" y="17" width="20" height="5" rx="1"/>
+                                                <circle cx="6" cy="5.5" r="1" fill="currentColor"/><circle cx="6" cy="12.5" r="1" fill="currentColor"/><circle cx="6" cy="19.5" r="1" fill="currentColor"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <strong>Hosting</strong>
+                                            <p>Host your application or website on our infrastructure</p>
+                                        </div>
+                                        <div class="service-check">&#10003;</div>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="service_type" value="compute" required>
+                                    <div class="service-card">
+                                        <div class="service-icon">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10M12 7v10"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <strong>Compute</strong>
+                                            <p>High-performance computing for research & simulations</p>
+                                        </div>
+                                        <div class="service-check">&#10003;</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2: Personal Info -->
+                        <div class="form-section">
+                            <div class="form-section-label">
+                                <span class="step-badge">2</span>
+                                Personal Information
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label>Full Name <span class="required">*</span></label>
+                                    <input type="text" name="name" required placeholder="Dr. Ahmed Mohamed">
+                                </div>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <div class="form-field">
+                                    <label>Email Address <span class="required">*</span></label>
+                                    <input type="email" name="email" required placeholder="researcher@university.edu">
+                                </div>
+                                <div class="form-field">
+                                    <label>Phone Number <span class="required">*</span></label>
+                                    <input type="tel" name="phone" required placeholder="+20 10 08945715">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label>Institution</label>
+                                    <input type="text" name="institution" placeholder="Fayoum University">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3: Research Field -->
+                        <div class="form-section">
+                            <div class="form-section-label">
+                                <span class="step-badge">3</span>
+                                Research Field <span class="required">*</span>
+                            </div>
+                            <div class="field-grid">
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="climate" required>
+                                    <div class="field-card"><span>🌍</span> Climate & Weather</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="astrophysics">
+                                    <div class="field-card"><span>🔭</span> Astrophysics</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="genomics">
+                                    <div class="field-card"><span>🧬</span> Genomics & Biology</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="ai">
+                                    <div class="field-card"><span>🤖</span> AI & Machine Learning</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="materials">
+                                    <div class="field-card"><span>💎</span> Materials Science</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="medical">
+                                    <div class="field-card"><span>🏥</span> Medical Research</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="engineering">
+                                    <div class="field-card"><span>✈️</span> Engineering</div>
+                                </label>
+                                <label class="field-option">
+                                    <input type="radio" name="field" value="chemistry">
+                                    <div class="field-card"><span>⚗️</span> Chemistry</div>
+                                </label>
+                                <label class="field-option field-option-other">
+                                    <input type="radio" name="field" value="other">
+                                    <div class="field-card"><span>➕</span> Other</div>
+                                </label>
+                            </div>
+                            <div class="form-row" id="otherFieldRow" style="display:none; margin-top:12px;">
+                                <div class="form-field">
+                                    <label>Please specify your field</label>
+                                    <input type="text" name="field_other" placeholder="Enter your research field...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 4: Resource Configuration -->
+                        <div class="form-section">
+                            <div class="form-section-label">
+                                <span class="step-badge">4</span>
+                                Resource Configuration
+                            </div>
+                            <div class="form-row form-row-2">
+                                <div class="form-field">
+                                    <label>CPU Cores</label>
+                                    <input type="text" name="cpu" placeholder="e.g. 16 cores" oninput="updateSummaryField('cpu','displayCPU',this.value)">
+                                </div>
+                                <div class="form-field">
+                                    <label>RAM (GB)</label>
+                                    <input type="text" name="ram" placeholder="e.g. 64 GB" oninput="updateSummaryField('ram','displayRAM',this.value)">
+                                </div>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <div class="form-field">
+                                    <label>GPU Acceleration</label>
+                                    <input type="text" name="gpu" placeholder="e.g. 2x NVIDIA A100" oninput="updateSummaryField('gpu','displayGPU',this.value)">
+                                </div>
+                                <div class="form-field">
+                                    <label>Project Duration</label>
+                                    <input type="text" name="duration" placeholder="e.g. 6 months" oninput="updateSummaryField('duration','displayDuration',this.value)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 5: Project Description -->
+                        <div class="form-section">
+                            <div class="form-section-label">
+                                <span class="step-badge">5</span>
+                                Project Description
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label>Description <span class="required">*</span></label>
+                                    <textarea name="description" required rows="5" placeholder="Describe your research project, computational requirements, and expected outcomes..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                
+                <!-- Right Column - Summary Panel -->
+                <div class="summary-panel-wrapper">
+                    <div class="summary-panel">
+                        <div class="panel-header">
+                            <h3>Request Summary</h3>
+                        </div>
+                        
+                        <div class="summary-service">
+                            <span>Service Type:</span>
+                            <strong id="displayServiceType">Not Selected</strong>
+                        </div>
+
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <span class="summary-label">CPU Cores</span>
+                                <span class="summary-value" id="displayCPU">—</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">RAM</span>
+                                <span class="summary-value" id="displayRAM">—</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">GPU</span>
+                                <span class="summary-value" id="displayGPU">—</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Duration</span>
+                                <span class="summary-value" id="displayDuration">—</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-divider"></div>
+                        
+                        <div class="summary-details">
+                            <div class="detail-row">
+                                <span>Research Field:</span>
+                                <strong id="selectedField">Not Selected</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span>Institution:</span>
+                                <strong id="selectedInst">Not Specified</strong>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="submit-btn" onclick="submitRequest()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                            Submit Access Request
+                        </button>
+                        
+                        <div class="help-section">
+                            <h4>Need Help?</h4>
+                            <div class="help-links">
+                                <a href="tel:+201008945715" class="help-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    +20 10 08945715
+                                </a>
+                                <a href="mailto:chep@fayoum.edu.eg" class="help-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    chep@fayoum.edu.eg
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <!-- Partner Logos Bar -->
+        <div class="footer-partners">
+            <div class="footer-partners-inner">
+                <span class="partners-label">In Collaboration With</span>
+                <div class="partners-logos">
+                    <div class="partner-logo-item">
+                        <img src="images/fayoum-university.jpg" alt="Fayoum University">
+                        <span>Fayoum University</span>
+                    </div>
+                    <div class="partner-divider"></div>
+                    <div class="partner-logo-item">
+                        <img src="images/faculty-science.jpg" alt="Faculty of Science">
+                        <span>Faculty of Science</span>
+                    </div>
+                    <div class="partner-divider"></div>
+                    <div class="partner-logo-item">
+                        <img src="images/cern-logo.webp" alt="CERN">
+                        <span>CERN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo-row">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" style="color:#06b6d4;flex-shrink:0">
+                        <path d="M4 2h16v2H4V2zm0 18h16v2H4v-2zM2 6h20v2H2V6zm0 10h20v2H2v-2zm0-5h20v2H2v-2z"/>
+                        <rect x="6" y="9" width="4" height="4"/><rect x="14" y="9" width="4" height="4"/>
+                    </svg>
+                    <h3 style="margin:0;font-size:1.1rem;">Horus Cloud</h3>
+                </div>
+                <p style="margin-top:10px;">Egypt's premier High-Performance Computing infrastructure for scientific research.</p>
+                <div class="footer-contact" style="margin-top:14px;">
+                    <p><strong>Phone:</strong> <a href="tel:+201008945715">+20 10 08945715</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:chep@fayoum.edu.eg">chep@fayoum.edu.eg</a></p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Request Access</a></li>
+                    <li><a href="login.php">Researcher Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Fayoum University<br>Faculty of Science<br>Fayoum, Egypt</p>
+                <p style="margin-top:10px;">
+                    <a href="mailto:chep@fayoum.edu.eg">chep@fayoum.edu.eg</a><br>
+                    <a href="tel:+201008945715">+20 10 08945715</a>
+                </p>
+            </div>
+
+            <!-- Project Lead -->
+            <div class="footer-section">
+                <h3>Project Lead</h3>
+                <div class="footer-pi">
+                    <div class="pi-avatar">MA</div>
+                    <div>
+                        <div class="pi-name">Dr. Mohammed Attia</div>
+                        <div class="pi-title">Principal Investigator</div>
+                        <div class="pi-title">Horus Cloud Project</div>
+                    </div>
+                </div>
+                <p style="margin-top:14px;font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6;">
+                    Faculty of Science<br>Fayoum University
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Horus Cloud — Fayoum University &amp; Faculty of Science. All rights reserved.</p>
+            <p style="margin-top:4px;font-size:.75rem;opacity:.4;">Developed in collaboration with CERN</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
